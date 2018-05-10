@@ -1,19 +1,26 @@
 import React from "react";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
-const Nav = () => (
+const Nav = props => (
   <nav className="navbar navbar-inverse navbar-top">
     <div className="container-fluid">
       <div className="navbar-header">
         <a href="/" className="navbar-brand">
-          React Recipes
+          My Site
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li className={window.location.pathname === "/about" ? "active" : ""}>
+                <Link to="/about">About</Link>
+              </li>
+              <li className={window.location.pathname === "/portfolio" ? "active" : ""}>
+                <Link to="/portfolio">Portfolio</Link>
+              </li>
+              <li className={window.location.pathname === "/contact" ? "active" : ""}>
+                <Link to="/contact">Contact</Link>
+              </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -36,7 +43,6 @@ const Nav = () => (
     </div>
   </nav>
 
-  
 );
 
 export default Nav;
