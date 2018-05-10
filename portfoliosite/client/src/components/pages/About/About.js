@@ -6,7 +6,7 @@ const About = props => (
     <h2>Web development knowledge overview</h2>
     <p>
       I am a full-stack web developer currently based in Raleigh, NC.
-      I work at <a href="https://www.kadro.com/" target="_blank">Kadro Solutions</a>, where I help make e-Commerce sites using the Magento 2 framework.
+      I work at <a href="https://www.kadro.com/" target="_blank">Kadro Solutions</a>, where I help build e-Commerce sites using the Magento 2 framework.
       There, I mostly write code in PHP and JavaScript. I need to be able to use MySQL on a regular basis.
     </p>
     <p>
