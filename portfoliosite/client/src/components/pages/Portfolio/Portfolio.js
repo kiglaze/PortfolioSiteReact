@@ -1,21 +1,35 @@
 import React from "react";
+import SiteListing from "./../../SiteListing";
 
 const Portfolio = props => (
   <div>
     <h1>Portfolio Page</h1>
-    <p>
-      Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-      molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-      magna a ultrices. Aenean pellentesque placerat lacus imperdiet efficitur.
-      In felis nisl, luctus non ante euismod, tincidunt bibendum mi. In a
-      molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna posuere,
-      eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque
-      nec metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla
-      facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh dictum
-      ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia
-      nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
-      Etiam vel condimentum magna, quis tempor nulla.
-    </p>
+    <h2>Sample sites from Web Development Bootcamp</h2>
+    <SiteListing
+        src="https://kiglaze.github.io/Bootstrap-Portfolio/portfolio.html"
+        description="Old version of this site."
+    />
+    <SiteListing
+        src="https://calm-mountain-94353.herokuapp.com/"
+        description="Intended to keep track of belongings. Utilizes Sequelize."
+    />
+    <SiteListing
+        src="https://vaijineel.github.io/BigFishSmallFish/"
+        description="Whimsical game utilizing Google Maps API and Firebase."
+    />
+    <SiteListing
+        src="https://kiglaze.github.io/week-4-game/"
+        description="Simple game. CSS and Javascript; nothing too fancy."
+    />
+    <h2>Sample sites from work at Kadro Solutions</h2>
+    <SiteListing
+        src="https://audioadvice.com"
+        description="Audio Advice"
+    />
+    <SiteListing
+        src="https://www.reeds.com"
+        description="REEDS"
+    />
   </div>
 );
 
