@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
+import Sidebar from "./components/Sidebar";
 import Input from "./components/Input";
 import Button from "./components/Button";
 import API from "./utils/API";
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
+          <Sidebar />
         </div>
       </Router>
     );
