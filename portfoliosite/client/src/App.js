@@ -22,11 +22,23 @@ class App extends Component {
       <Router>
         <div>
           <Nav />
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact} />
-          <Sidebar />
+          <div class="main-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-sm-12">
+                  <section>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/portfolio" component={Portfolio} />
+                    <Route path="/contact" component={Contact} />
+                  </section>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                  <Sidebar />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Router>
     );

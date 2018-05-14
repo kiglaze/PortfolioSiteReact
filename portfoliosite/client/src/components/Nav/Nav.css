@@ -1,3 +1,13 @@
 nav.navbar {
   margin-bottom: 0;
 }
+.icon-link {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+img.icon {
+  width: 3em;
+  height: 3em;
+}

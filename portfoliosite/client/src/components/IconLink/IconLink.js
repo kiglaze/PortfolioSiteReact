@@ -3,9 +3,8 @@ import "./IconLink.css";
 
 const IconLink = props => (
   <div className="icon-link">
-    <a href={props.link} >
-        <img src={props.image} className="icon" title={props.label} />
-        <p>{props.label}</p>
+    <a href={props.link} target="_blank" >
+        <img src={props.image} className="icon" title={props.label} alt={props.label} />
     </a>
   </div>
 );
