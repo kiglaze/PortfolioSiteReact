@@ -11,7 +11,13 @@
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "professional",
+    "mongoose",
+    "heroku"
+  ],
+  "author": "Kristin Iris Glaze",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
@@ -23,5 +29,8 @@
     "express": "^4.15.4",
     "mongoose": "^4.11.7",
     "react-router-dom": "^4.1.2"
+  },
+  "engines": {
+    "node": "6.11.0"
   }
 }
