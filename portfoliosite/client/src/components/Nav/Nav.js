@@ -1,7 +1,6 @@
 import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
-import IconLink from "./../../components/IconLink";
 
 const Nav = props => (
   <header class="clearfix">
@@ -11,7 +10,7 @@ const Nav = props => (
         <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12">
           <div className="navbar-header">
             <a href="/" className="navbar-brand">
-              My Site
+              Iris's Professional Website
             </a>
           </div>
         </div>

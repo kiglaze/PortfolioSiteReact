@@ -7,7 +7,7 @@ import "./SiteListing.css";
 const SiteListing = props => (
   <div>
     <img src={props.image} />
-    <a href={props.src} target="_blank">{props.src}</a>
+    <a href={props.src} target="_blank" alt={props.siteName}>{props.src}</a>
     <p>{props.description}</p>
   </div>
 );
